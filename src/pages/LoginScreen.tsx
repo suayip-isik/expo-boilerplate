@@ -12,7 +12,7 @@ const LoginScreen: React.FC = () => {
   return (
     <View style={styles.page}>
       <Pressable style={styles.button} onPress={loginButtonOnPress}>
-        <Text>Uygulamaya Giriş yap</Text>
+        <Text>Uygulamaya Giriş yap {process.env.EXPO_PUBLIC_API_URL?.toString()}</Text>
       </Pressable>
     </View>
   );
