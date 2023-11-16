@@ -10,7 +10,6 @@ export type ActionMapType<M extends { [index: string]: any }> = {
 };
 
 export interface IAuthValueProps {
-  isInitialized: boolean;
   eMail: string | null;
   isAuthenticated: boolean;
   isRememberMail: boolean;
@@ -24,12 +23,14 @@ export interface ILoginPayload {
 
 export type IContextType = IAuthValueProps & {
   initialize: () => void;
-  // login: (loginModel: ILoginPayload) => void;
+  login: (loginModel: ILoginPayload) => void;
   //  ogout: () => void;
   // finishSetup: () => void; if you use the tutorial screen
   // rememberMail: (isRememberMail: string | undefined) => void;
   // startSetup: () => void;
 };
+
+export type AuthUserType = {} | any;
 
 export interface IAuthProviderProps {
   children: React.ReactNode;
@@ -37,6 +38,7 @@ export interface IAuthProviderProps {
 
 export enum Types {
   INITIAL = "INITIAL",
+  LOGIN = "LOGIN",
 }
 
 type Payload = {
@@ -44,6 +46,10 @@ type Payload = {
     isAuthenticated: boolean;
     eMail: string | null;
     isRememberMail: boolean;
+  };
+  [Types.LOGIN]: {
+    eMail: string | null;
+    isAuthenticated: boolean;
   };
 };
 
