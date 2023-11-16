@@ -57,7 +57,7 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
           type: Types.INITIAL,
           payload: {
             isAuthenticated: true,
-            eMail: eMail,
+            eMail,
             isRememberMail: eMail ? true : false,
           },
         });
@@ -115,9 +115,6 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
         "İnternet bağlantınızı kontrol ederek tekrar giriş yapmayı deneyiniz"
       );
     }
-    // setTimeout(() => {
-    //   console.log("Fonksiyon durdu!");
-    // }, 10);
   };
 
   return (

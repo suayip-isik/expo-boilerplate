@@ -9,7 +9,7 @@ const Router = () => {
   const { isAuthenticated } = useAuthContext();
   return (
     <NavigationContainer>
-      {isAuthenticated ? <AuthNavigator /> : <MainTabNavigator />}
+      {isAuthenticated ? <MainTabNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };
