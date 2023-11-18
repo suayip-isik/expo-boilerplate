@@ -6,7 +6,8 @@ import AuthNavigator from "./navigation/AuthNavigator";
 import MainTabNavigator from "./navigation/MainTabNavigator";
 
 const Router = () => {
-  const { isAuthenticated } = useAuthContext();
+  // const { isAuthenticated } = useAuthContext();
+  let isAuthenticated = true;
   return (
     <NavigationContainer>
       {isAuthenticated ? <MainTabNavigator /> : <AuthNavigator />}

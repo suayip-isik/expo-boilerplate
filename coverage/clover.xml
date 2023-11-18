@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700312601285" clover="3.2.0">
-  <project timestamp="1700312601285" name="All files">
+<coverage generated="1700313186533" clover="3.2.0">
+  <project timestamp="1700313186533" name="All files">
     <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0" elements="7" coveredelements="0" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
     <file name="Router.js" path="/Users/suayip/Documents/GitHub/expo-boiler-plate/src/Router.js">
       <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
