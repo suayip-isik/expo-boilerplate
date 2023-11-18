@@ -7,9 +7,7 @@ import { useAuthContext } from "../context/auth/useAuthContext";
 const LoginScreen: React.FC = () => {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   const { login } = useAuthContext();
-  const loginButtonOnPress = () => {
-    // login({ userName: "", password: "", isRememberMe: true });
-  };
+  const loginButtonOnPress = () => {};
 
   return (
     <View style={styles.page}>
