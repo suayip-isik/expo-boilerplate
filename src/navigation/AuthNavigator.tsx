@@ -5,7 +5,7 @@ import { LoginScreen } from "../pages";
 const Stack = createNativeStackNavigator();
 
 const AuthNavigator = () => (
-  <Stack.Navigator>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="LoginScreen" component={LoginScreen} />
   </Stack.Navigator>
 );
