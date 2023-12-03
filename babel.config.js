@@ -20,8 +20,9 @@ module.exports = function (api) {
           root: ["."],
           alias: {
             "@components": "./src/components",
-            "@navigation": "./src/navigation",
+            "@navigations": "./src/navigations",
             "@context": "./src/context",
+            "@pages": "./src/pages/index.ts",
           },
         },
       ],

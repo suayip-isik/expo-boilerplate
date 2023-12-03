@@ -1,5 +1,5 @@
 import React from "react";
-import { CameraScreen, HomeScreen, SettingsScreen } from "../pages";
+import { CameraScreen, HomeScreen, SettingsScreen } from "@pages/";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const Tab = createBottomTabNavigator();
@@ -14,4 +14,4 @@ const MainTabNavigator = () => {
   );
 };
 
-export default MainTabNavigator;
+export { MainTabNavigator };
