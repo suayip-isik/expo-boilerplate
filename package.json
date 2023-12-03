@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest"
+    "test": "jest",
+    "generate:api:with:swagger:v2": "openapi-generator-cli generate --generator-key v2.0  -g typescript-axios -i http://your-v2-swagger-url-or-swagger.json-directory -o ./src/api --skip-validate-spec --global-property skipFormModel=false,withInterfaces=true",
+    "generate:api": "openapi-generator-cli generate -g typescript-axios -i http://your-swagger-url-or-swagger.json-directory -o ./src/data/api --skip-validate-spec --global-property skipFormModel=false,withInterfaces=true"
   },
   "dependencies": {
     "@openapitools/openapi-generator-cli": "^2.7.0",
@@ -36,6 +38,7 @@
     "@babel/core": "^7.20.0",
     "@testing-library/react-native": "^12.4.0",
     "@types/react": "~18.2.14",
+    "babel-plugin-module-resolver": "^5.0.0",
     "react-native-svg-transformer": "^1.1.0",
     "typescript": "^5.1.3"
   },

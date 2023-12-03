@@ -1,6 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": "." ,
+    "paths": {
+      "@components": [
+        "src/components/index.ts"
+      ],
+      "@navigations/*": [
+        "src/navigations/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@pages": [
+        "src/pages/index.ts"
+      ],
+   },
   }
 }
