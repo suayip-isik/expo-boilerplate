@@ -4,7 +4,7 @@
     "strict": true,
     "baseUrl": "." ,
     "paths": {
-      "@components": [
+      "@components/": [
         "src/components/index.ts"
       ],
       "@navigations/*": [
@@ -13,7 +13,7 @@
       "@context/*": [
         "src/context/*"
       ],
-      "@pages": [
+      "@pages/": [
         "src/pages/index.ts"
       ],
    },

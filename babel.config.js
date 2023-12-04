@@ -19,7 +19,7 @@ module.exports = function (api) {
           ],
           root: ["."],
           alias: {
-            "@components": "./src/components",
+            "@components": "./src/components/index.ts",
             "@navigations": "./src/navigations",
             "@context": "./src/context",
             "@pages": "./src/pages/index.ts",
